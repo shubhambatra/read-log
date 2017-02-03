@@ -1,0 +1,17 @@
+{
+  "name": "read-log",
+  "version": "1.0.0",
+  "description": "'Read live records from log file '",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "'Shubham Batra'",
+  "license": "MIT",
+  "dependencies": {
+    "cron": "^1.2.1",
+    "express": "^4.14.1",
+    "http": "0.0.0",
+    "tail": "^1.2.1"
+  }
+}
