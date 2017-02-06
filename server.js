@@ -2,7 +2,7 @@ var http = require('http'),
     Tail = require('tail').Tail,
     fs = require('fs'),
 
-    // NEVER use a Sync function except at start-up!
+    // NEVER use a Sync function this is for demo !
     index = fs.readFileSync(__dirname + '/index.html');
 
 
@@ -39,8 +39,7 @@ setInterval(writeFile, 2000);
 io.on('connection', function(socket) {
     // Use socket to communicate with this particular client only, sending it it's own id
     socket.emit('welcome', { message: 'Welcome!', id: socket.id });
-
-    socket.on('i am client', console.log);
 });
 
 app.listen(3000);
+console.log('server is running on port 3000');
